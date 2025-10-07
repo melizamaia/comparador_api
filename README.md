@@ -62,7 +62,9 @@ python -m venv .venv
 ```
 
 # se bloquear execução de script, libere na sessão atual:
+```
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+```
 
 # ativar
 ```
@@ -138,14 +140,23 @@ curl.exe -i -H "Token: $TOKEN" "$API/api/comparar?query=notebook"
 
 ## 7) Estrutura
 
-app/
-  api/comparador_routes.py
-  auth/auth_handler.py
-  providers/{amazon_api, mercadolivre_api}.py
-  services/comparador_service.py
-  models/produto_models.py
-  schemas/produto_schema.py
-main.py
+```
+- app/
+  - api/
+    - comparador_routes.py
+  - auth/
+    - auth_handler.py
+  - providers/
+    - amazon_api.py
+    - mercadolivre_api.py
+  - services/
+    - comparador_service.py
+  - models/
+    - produto_models.py
+  - schemas/
+    - produto_schema.py
+- main.py
+```
 
 ## 8) Troubleshooting (rápido)
 403 Token inválido/ausente: o valor do header Token deve ser idêntico ao API_KEY do .env.
