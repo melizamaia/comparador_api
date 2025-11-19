@@ -171,4 +171,6 @@ Linux/WSL: fuser -k 8000/tcp
 
 Windows: netstat -ano | findstr :8000 → taskkill /PID <PID> /F
 
-## 9) MIT — veja LICENSE.
+## 9) Licença
+
+Este projeto está sob a licença **MIT** — veja o arquivo [LICENSE](LICENSE).
